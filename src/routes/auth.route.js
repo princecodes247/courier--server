@@ -1,12 +1,12 @@
 const router = require("express").Router();
-const AuthCtrl = require("./../controllers/auth.controller");
+const AuthController = require("./../controllers/auth.controller");
 const upload = require("./../middlewares/multer.middleware")
 
-router.post("/sign-up", upload("image"), AuthCtrl.signup);
-router.post("/sign-in", AuthCtrl.signin);
-router.post("/request-email-verification", AuthCtrl.RequestEmailVerification);
-router.post("/verify-email", AuthCtrl.VerifyEmail);
-router.post("/request-password-reset", AuthCtrl.RequestPasswordReset);
-router.post("/reset-password", AuthCtrl.resetPassword);
+router.post("/signUp", upload("image"), AuthController.signup);
+router.post("/signIn", AuthController.signin);
+router.post("/requestEmailVerification", AuthController.RequestEmailVerification);
+router.post("/verifyEmail", AuthController.VerifyEmail);
+router.post("/requestPasswordReset", AuthController.RequestPasswordReset);
+router.post("/resetPassword", AuthController.resetPassword);
 
 module.exports = router
