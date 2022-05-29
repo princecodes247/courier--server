@@ -1,7 +1,7 @@
 {
   "name": "courier--server",
   "version": "0.0.0",
-  "description": "courier--server is awesome! -  Made with BangaJS",
+  "description": "courier--server",
   "main": "server.js",
   "scripts": {
     "start": "node -r dotenv/config server.js",
