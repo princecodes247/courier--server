@@ -4,7 +4,7 @@ const environments = {
      development: require("./env/dev.env.json"),
      production: {
           APP_NAME: "courier  server",
-          MONGODB_URI: process.env.MONGODB_URI,
+          MONGODB_URI: process.env.MONGODB_URI + "courier",
           JWT_SECRET: "XXXX-XXXX-XXXX",
           BCRYPT_SALT: 10,
           role: {
@@ -14,7 +14,7 @@ const environments = {
          
           url: {
             CLIENT_URL: process.env.CLIENT_URL,
-            BASE_URL: process.env.CLIENT_URL,
+            BASE_URL: process.env.BASE_URL,
           },
           mailer: {
             HOST: "",
